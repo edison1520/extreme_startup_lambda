@@ -13,4 +13,12 @@ public class ResponderModelTest {
         assertThat(respuesta).isEqualTo("devopers");
     }
 
+    @Test
+    public void  cuandoPreguntanPorSumar12y5Responder17(){
+        ResponderModel responder = new ResponderModel();
+        String pregunta = "39543160: what is 12 plus 5";
+        String respuesta = responder.answer(pregunta);
+        assertThat(respuesta).isEqualTo("17");
+    }
+
 }
